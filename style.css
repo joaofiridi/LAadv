@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     /* font-family: "Mark" , sans-serif; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Gotham Office";
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Mark';
-    src: url('resources/font/MarkW1G-Light.otf') format('otf'),
-         url('resources/font/MarkW1G-Regular.otf') format('woff');
+    font-family: "Gotham Office";
+    src: url('resources/font/GothamOffice-Regular.eot') format('eot'),
+         url('resources/font/GothamOffice-Regular.woff') format('woff'),
+         url('resources/font/GothamOffice-Bold.eot') format('eot');
     font-weight: normal;
     font-style: normal;
 }
@@ -129,7 +130,7 @@ nav ul li a:hover::after{
     margin-top: 12%;
     font-size: 30px;
     position: relative;
-    top: 100px;
+    top: 120px; /* tava 100px
     /* left: 100px; */
     z-index: 10;
     background-color: rgba(240, 247, 246, 0.7);
@@ -414,7 +415,8 @@ nav ul li a:hover::after{
     font-size: 1.2em; 
     line-height: 1.6; 
     font-weight: lighter;
-    text-align: justify
+    text-align: justify;
+    width: 80%;
 }
 /*--------------------------------contact---------------------*/
 
@@ -615,11 +617,15 @@ form btn2{
     /* height: 100vh;  Takes full viewport height to center vertically */
     text-align: center; /* Ensures the text is centered */
 }
-
-.col-left, .col-right {
+.row-sobre .col-left {
+    max-width: 1000px; /* You can adjust this width to your preference */
+    margin: 0 auto; /* This centers the content */
+    text-align: center; /* Centers the text itself */
+}
+/* .col-left, .col-right {
     width: 50%;
     margin: 10px;
-}
+} */
 
 .row-sobre .sub-title {
     font-size: 2em; 
@@ -629,7 +635,7 @@ form btn2{
 
 .sobreTxt {
     font-size: 1.4em; 
-    line-height: 1.6; 
+    line-height: 1.2; 
     margin-bottom: 20px;
     color: #262626;
     font-weight: lighter;
@@ -654,20 +660,21 @@ form btn2{
 
 /* ------------------------------- serviços ---------------------- */
 #servicos{
-    padding: 30px 0;
+    padding: 20px 10%;
     background-color: #f0f7f6;
 }
 
-#servicos .container {
+/* #servicos .container {
     max-width: 100%;
-    padding: 0; /* Remove extra padding that might limit width */
-}
+    /* padding: 0; Remove extra padding that might limit width */
+    /* padding: 10px 10%;
+} */ 
 
-.ServContainer {
+/* .ServContainer {
     max-width: 100%;
     padding: 0;
     margin: 0;
-}
+} */
 
 .row-servicos {
     display: flex;
@@ -675,9 +682,9 @@ form btn2{
     margin-top: 20px;
     justify-content: center;  
     /* text-align: center;  */
-    align-items: center;
-  
-}
+    /* align-items: center; */
+} 
+
 .row-servicos h1 {
     color: #456261
 }
@@ -702,7 +709,7 @@ form btn2{
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-align: center;
     min-width: 350px; /* Set a min width for the box */
     height: 150px; /* Fix height */
@@ -730,7 +737,7 @@ form btn2{
 
 /* ---------------------- equipa -----------------------*/
 #equipa {
-    padding: 50px 0;
+    padding: 30px 0;
     background-color: #f0f7f6;
 }
 
@@ -813,7 +820,7 @@ form btn2{
 
 /* ---------------------- contactos -----------------------*/
 #contactos {
-    padding: 50px 0;
+    padding: 30px 0;
     background-color: #f0f7f6;
     text-align: center;
 }
