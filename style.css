@@ -1027,6 +1027,15 @@ html, body {
   #portfolio .row-Form .col-right {
     text-align: center;
   }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2147483647 !important; /* ou 999999 se preferires um número menor */
+}
+
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -1042,7 +1051,7 @@ html, body {
         width: 250px;
         height: 100%;
         padding-top: 50px;
-        z-index: 99999 !important;
+        z-index: 2147483646 !important;
         transition: right 0.5s ease;
         border-bottom-left-radius: 12px; 
         border-top-left-radius: 12px;
@@ -1086,10 +1095,10 @@ html, body {
    color: #ffffff;
   }
    nav .fa-bars {
-    position: fixed;
+    position: fixed !important;
     top: 20px;
     right: calc(20px + env(safe-area-inset-right));
-    z-index: 100000;
+    z-index: 2147483647 !important;
     background: #456261;;
     color: #E6BF83;
     padding: 10px;
