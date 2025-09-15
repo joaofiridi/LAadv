@@ -15,13 +15,14 @@
        <div class="container">
             <nav>
                 <!-- <img src="resources/weblogo.jpg" class="logo"> -->
-                <ul id="sidemenu" style="margin-left: 100px; margin-top: 50px;">
+                <ul id="sidemenu" style="margin-left: 100px; margin-top: 80px;">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre nós</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="equipa.html">Equipa</a></li>
                     <li><a href="contactos.html">Contactos</a></li>
-                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    <!-- <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i> -->
+                     <span onclick="closemenu()" class="close-menu">×</span>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
@@ -38,24 +39,10 @@
             </div>
        </div>
     </div>
-<!----------------------------------areas----------->
-<!-- <div id="areas">
-    <div class="container">
-        <div class="hr" style="margin-bottom: 30px;">
-            <div class="row"></div>
-        </div>
-        <div id="col-1"> -->
-            <!-- <h4>Algum texto aqui </h4>
-            <h5>e aqui algum texto e aqui algum texto e aqui algum texto e aqui algum texto e aqui algum texto e aqui algum texto e aqui algum texto e aqui algum texto e aqui algum texto </h5> -->
-        <!-- </div> 
-        <div class="hr" style="margin-top: 30px;">
-            <div class="row"></div>
-        </div>
-    </div>
-</div> -->
+
 <!----------------------services---------->
 <div id="servicos">
-    <div class="Container">
+    <div class="container">
         <div class="hr" style="margin-bottom: 20px; margin-top: 20px">
             <div class="row"></div>
         </div>
@@ -110,70 +97,7 @@
                
     </div>
 </div>
-<!----------------------------------portfolio----------->
-<!-- <div id="portfolio">
-    <div class="container">   
-        <div class="hr" style="margin-bottom: 20px; margin-top: 20px;">
-            <div class="row"></div>
-        </div>
 
-        <h1 class="sub-title">O Nosso Conceito </h1>
-        <div class="row-Form">
-            <div class="col-left">
-                <p>Na LA Advogados, consideramos que a transparência, o compromisso, a celeridade de resposta e a relação de confiança com os Clientes são as permissas base para qualquer assessoria jurídica. Apostamos igualmente na formação técnica de todos os colaboradores de forma regular, procurando sempre a resposta mais inovadora para cada situação</p>
-                <div class="miniLogo">
-                    <img src="resources/headerLogo.png" class="logoForm"> 
-                </div>
-            </div>
-            <div class="col-right">
-                <h2 style="margin-bottom: 10px;">Como podemos ajudar? <i class="fa-solid fa-envelope"></i></h2>
-                <form action="https://formspree.io/f/xrgvdjyj" method="post" id="contact-form">
-                    <input type="text" name="Name" placeholder="Nome" required>
-                     <input type="email" name="Email" placeholder="Email" required>
-                     <input type="text" name="phone" placeholder="Contato Telefónico" >
-                     <input type="text" name="assunto" placeholder="Assunto" >
-                     <textarea name="Message"  rows="6" placeholder="Descrição"></textarea>   
-                     <button type="submit" class="btn btn2">Submeter</button>
-                    
-                </form>
-                <div id="msg"></div>
-            </div>
-        </div>
-
-    </div>
-</div> -->
-<!----------------------------------contact----------->
-<!-- <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">.contactMe</h1>
-                <p><i class="fa-solid fa-envelope"></i> joaofiridi@hotmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> +351 912 424 756 </p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/joaofrdiogo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/joaofiridi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/joaofiridi" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://gitlab.com/joaofiridi" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
-                </div>
-                <a href="resources/Joao cv.pdf" download class="btn btn2">.downloadCV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                     <input type="text" name="Name" placeholder=".name" required>
-                     <input type="email" name="Email" placeholder=".email" required>
-                     <textarea name="Message"  rows="6" placeholder=".message"></textarea>   
-                     <button type="submit" class="btn btn2">.submit</button>
-                </form> 
-                <span id="msg"></span>
-
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Kevin.</p>
-    </div>
-</div> -->
 <!----------------------footer starts here -------------------->
 <div class="footer">
     <div class="container">
@@ -238,6 +162,28 @@
             </div>
     </div>
 </div>
+<!-- Footer mobile -->
+<div class="footer-mobile">
+      <div class="hr" style="margin-top:12px; margin-bottom: 25px;">
+                <div class="row"></div>
+      </div>
+    <div class="footer-content">
+        <div class="footer-left">
+            <img src="resources/weblogo.jpg" class="logo" alt="LA Advogados">
+        </div>
+        <div class="footer-right">
+            <a href="https://www.instagram.com/laadvogados.adv/" target="_blank" id="ig">
+                <i class="fa-brands fa-instagram"></i> 
+            </a>
+            <a href="contactos.html" id="contact-link">
+                Contacte-nos
+            </a>
+        </div>
+    </div>
+      <div class="hr">
+                <div class="row"></div>
+            </div>
+</div>
 
 <!-------footer ends here ------->
 
@@ -264,7 +210,7 @@
     }
 
     function closemenu(){
-        sidemenu.style.right = "-200px";
+        sidemenu.style.right = "-250px";
     }
 
 

@@ -15,13 +15,14 @@
        <div class="container">
             <nav>
                 <!-- <img src="resources/weblogo.jpg" class="logo"> -->
-                <ul id="sidemenu" style="margin-left: 100px; margin-top: 50px;">
+                <ul id="sidemenu" style="margin-left: 100px; margin-top: 80px;">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre nós</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="equipa.html">Equipa</a></li>
                     <li><a href="contactos.html">Contactos</a></li>
-                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    <!-- <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i> -->
+                    <span onclick="closemenu()" class="close-menu">×</span>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
@@ -135,6 +136,28 @@
             </div>
     </div>
 </div>
+<!-- Footer mobile -->
+<div class="footer-mobile">
+      <div class="hr" style="margin-top:12px; margin-bottom: 25px;">
+                <div class="row"></div>
+      </div>
+    <div class="footer-content">
+        <div class="footer-left">
+            <img src="resources/weblogo.jpg" class="logo" alt="LA Advogados">
+        </div>
+        <div class="footer-right">
+            <a href="https://www.instagram.com/laadvogados.adv/" target="_blank" id="ig">
+                <i class="fa-brands fa-instagram"></i> 
+            </a>
+            <a href="contactos.html" id="contact-link">
+                Contacte-nos
+            </a>
+        </div>
+    </div>
+      <div class="hr">
+                <div class="row"></div>
+            </div>
+</div>
 
 <!-------footer ends here ------->
 
@@ -161,7 +184,7 @@
     }
 
     function closemenu(){
-        sidemenu.style.right = "-200px";
+        sidemenu.style.right = "-250px";
     }
 
 
