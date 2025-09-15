@@ -1072,6 +1072,7 @@ html, body {
     cursor: pointer;
     font-weight: 300; 
     color: silver;
+     z-index: 100001; 
 }
     nav ul a {
     /* color: #E6BF83; */
@@ -1088,7 +1089,7 @@ html, body {
     position: fixed;
     top: 20px;
     right: calc(20px + env(safe-area-inset-right));
-    z-index: 10002;
+    z-index: 100000;
     background: #456261;;
     color: #E6BF83;
     padding: 10px;
